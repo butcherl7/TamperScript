@@ -29,8 +29,9 @@
             const target = e.target;
             if (target.tagName === "A" && target.classList.contains("xa")) {
                 const span = target.querySelector("span.Ca");
-                if (desktop.hasOwnProperty(span?.textContent)) {
-                    target.href = desktop[span.textContent];
+                const name = span?.textContent;
+                if (desktop.hasOwnProperty(name) && target.href !== desktop[name]) {
+                    target.href = desktop[name];
                 }
             }
         })
