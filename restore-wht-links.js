@@ -24,11 +24,11 @@
     }
 
     setTimeout(() => {
-        const la = document.getElementsByClassName("la")[0];
+        const la = document.getElementsByClassName("va")[0];
         la.addEventListener("click", function (e) {
             const target = e.target;
-            if (target.tagName === "A" && target.classList.contains("xa")) {
-                const span = target.querySelector("span.Ca");
+            if (target.tagName === "A" && target.classList.contains("Da")) {
+                const span = target.querySelector("span.Ia");
                 const name = span?.textContent;
                 if (desktop.hasOwnProperty(name) && target.href !== desktop[name]) {
                     target.href = desktop[name];
